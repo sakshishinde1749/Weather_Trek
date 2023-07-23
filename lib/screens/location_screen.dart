@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:clima/utilities/constants.dart';
-import 'package:clima/services/weather.dart';
+import '../services/weather.dart';
+import '../utilities/constants.dart';
 import 'city_screen.dart';
+
+
 
 class LocationScreen extends StatefulWidget {
   LocationScreen({this.locationWeather});
@@ -73,6 +75,7 @@ class _LocationScreenState extends State<LocationScreen> {
                     child: Icon(
                       Icons.near_me,
                       size: 50.0,
+                      color: Colors.white,
                     ),
                   ),
                   TextButton(
@@ -94,6 +97,7 @@ class _LocationScreenState extends State<LocationScreen> {
                     child: Icon(
                       Icons.location_city,
                       size: 50.0,
+                      color: Colors.white,
                     ),
                   ),
                 ],

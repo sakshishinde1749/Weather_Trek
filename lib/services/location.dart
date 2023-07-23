@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
 
+
+
 class LocationScreen extends StatefulWidget {
   @override
   _LocationScreenState createState() => _LocationScreenState();
@@ -48,8 +50,8 @@ class _LocationScreenState extends State<LocationScreen> {
 }
 
 class Location {
-  late double latitude;
-  late double longitude;
+  double latitude = 12.5;
+  double longitude = 19.4;
 
   Future<bool> checkLocationPermission() async {
     // Check if the location permission is already granted
